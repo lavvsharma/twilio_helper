@@ -1,18 +1,24 @@
 # 📲 TwilioHelper
 
+<p align="center">
+<a href="https://pypi.org/project/twilio-helper" target="_blank">
+    <img src="https://img.shields.io/pypi/v/twilio-helper/?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+
+<a href="https://pypistats.org/packages/twilio-helper" target="_blank">
+    <img src="https://img.shields.io/pypi/dm/twilio-helper" alt="Downloads">
+</a>
+</p>
+
 **TwilioHelper** is a lightweight and reliable Python wrapper around Twilio's WhatsApp API, designed for quick
 integration and automated messaging. It provides built-in credential validation and error handling out of the box,
 making it ideal for alerting systems, notification bots, and automation workflows.
-
----
 
 ## 🔧 Features
 
 - ✅ **Credential Validation** – Automatically validates Account SID and Auth Token during initialization.
 - 📤 **WhatsApp Messaging** – Send WhatsApp messages in just one function call.
 - ❌ **Robust Error Handling** – Handles common Twilio exceptions gracefully with meaningful feedback.
-
----
 
 ## 🚀 Installation
 
@@ -22,8 +28,6 @@ Install the Twilio SDK (if not already installed):
 pip install twilio
 ````
 
----
-
 ## 🧪 Getting Started
 
 1. **Activate Twilio Sandbox for WhatsApp:**
@@ -31,13 +35,10 @@ pip install twilio
    enable your sandbox and verify your recipient phone number.
 
 2. **Gather Credentials:**
-
     * `Account SID`
     * `Auth Token`
     * `From Number` (typically `whatsapp:+14400000000` for sandbox)
     * `To Number` (your verified number, e.g., `whatsapp:+919900000000`)
-
----
 
 ## 📦 Usage
 
@@ -57,8 +58,6 @@ response = helper.send_whatsapp_message(
 print(response)  # Example output: {'message_sid': 'SMXXXXXXXXXXXXXXXXXXXX'}
 ```
 
----
-
 ## 🛡 Error Handling
 
 TwilioHelper raises clear, descriptive exceptions for:
@@ -66,19 +65,13 @@ TwilioHelper raises clear, descriptive exceptions for:
 * ❗ **Invalid Twilio credentials** – Prevents initialization if credentials are incorrect.
 * ❗ **Failed message send** – Errors from invalid numbers, message content, or connectivity are caught and reported.
 
----
-
 ## 🧾 License
 
 This project is licensed under the **MIT License**.
 
----
-
 ## 👨‍💻 Author
 
 Built with ❤️ by [Lav](https://github.com/lavvsharma)
-
----
 
 ## 📬 Contributions & Feedback
 
